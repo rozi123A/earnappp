@@ -1,16 +1,6 @@
 {
-  "name": "earnapp",
-  "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
-  "engines": {
-    "node": "18.x"
-  },
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "axios": "^1.6.0"
+    "start": "node app.js"
   }
 }
