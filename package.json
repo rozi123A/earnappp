@@ -1,0 +1,22 @@
+{
+  "name": "earnapp",
+  "version": "1.0.0",
+  "description": "Telegram Mini App — Watch ads, earn Telegram Stars",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start":   "node server/index.js",
+    "dev":     "node --watch server/index.js",
+    "genkey":  "node -e \"const c=require('crypto');console.log('REWARD_HMAC_KEY='+c.randomBytes(32).toString('hex'));console.log('ADMIN_SECRET='+c.randomBytes(32).toString('hex'));\""
+  },
+  "dependencies": {
+    "better-sqlite3":    "^9.6.0",
+    "cors":              "^2.8.5",
+    "express":           "^4.19.2",
+    "express-rate-limit":"^7.3.1",
+    "helmet":            "^7.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
